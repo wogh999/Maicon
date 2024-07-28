@@ -76,9 +76,11 @@
     - ./config/train.yaml  내의 경로명을 실제 학습 환경에 맞게 수정
       data_root_dir: C:\Users\User\Desktop\ai\baseline\data\train\x\*.png   #image
                      C:\Users\User\Desktop\ai\baseline\data\train\y\*.png   #mask
-                     # 학습 데이터 절대경로명
-      out_root_dir: C:\Users\User\Desktop\ai\baseline\results\train\20221108_235819\ #학습 결과물 절대경로명
-      tb_dir: C:\Users\User\Desktop\ai\baseline\results\train\20221108_235819\train.log  # 학습 로그 절대경로명
+      
+  - 학습 데이터 절대경로명
+      
+      out_root_dir: C:\Users\User\Desktop\ai\baseline\results\train\20221108_235819\ 
+      tb_dir: C:\Users\User\Desktop\ai\baseline\results\train\20221108_235819\train.log  
 
   - 학습 스크립트 실행
     python train.py
