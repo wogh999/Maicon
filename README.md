@@ -57,7 +57,7 @@
 
 # 실행 환경 설정
 
-  - 소스 코드 및 conda 환경 설치  <vr>
+  - 소스 코드 및 conda 환경 설치 
     conda create -n baseline python=3.7
     pip install numpy
     torch==1.13.0 version internet에서 install
@@ -84,7 +84,7 @@
     python train.py
     
   - 학습 스크립트 내용
-    python train.py
+    python train.py <vr>
     image size는 원본 이미지 비율을 유지하여 width: 1280, height: 640로 사용함
     transform을 적용하기 위해 albumentation 라이브러리를 설치한 후,
     Randowshadow,ColorJitter,VerticalFlip,CLAHE,RandomFog,RGBShift,Normalize,ToTensorV2 등을 적용함 -> 이후 성능 저하로 transform을 제거함
