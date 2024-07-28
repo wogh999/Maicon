@@ -57,7 +57,7 @@
 
 # 실행 환경 설정
 
-  - 소스 코드 및 conda 환경 설치
+  - 소스 코드 및 conda 환경 설치  <vr>
     conda create -n baseline python=3.7
     pip install numpy
     torch==1.13.0 version internet에서 install
