@@ -87,12 +87,15 @@
     python train.py
     
     image size는 원본 이미지 비율을 유지하여 width: 1280, height: 640로 사용함
+    
     transform을 적용하기 위해 albumentation 라이브러리를 설치한 후,
     Randowshadow,ColorJitter,VerticalFlip,CLAHE,RandomFog,RGBShift,Normalize,ToTensorV2 등을 적용함 -> 이후 성능 저하로 transform을 제거함
-    데이터 augmentation 적용 후에 성능이 잘 나오지 않아 학습 데이터 수 증가를 위해 train/val 비율을 9:1로 나누어 진행함
-    model encoder에 resnet101, resnet34, timm-efficientnet-b0, timm-efficientnet-b1, timm-efficientnet-b3, efficientnet-b0 등을 적용해 봄 -> timm-efficientnet-b0 선택
-    encoder weight는 noisy-student 와 imagnet을 적용해본 결과 noisy-student으로 선택함
+    
+    model encoder에 timm-efficientnet-b0 선택
+    encoder weight는 noisy-student으로 선택함
+    
     activation은 모델 자체에서 relu가 사용되어 activation을 추가하지 않았음. -> 실제로 sigmoid를 사용한 결과 성능이 하락함
+    
     loss 부분에서는 학습 과정에서 iou1, iou2, iou3 중 iou3 값이 가장 낮아 iou3에 가중치를 더 주었지만, 성능변화에 큰 변화가 없어 그대로 진행함
   
 # 테스트 실행 방법
