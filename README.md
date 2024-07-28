@@ -79,7 +79,8 @@
       
   - 학습 데이터 절대경로명
       
-      out_root_dir: C:\Users\User\Desktop\ai\baseline\results\train\20221108_235819\ 
+      out_root_dir: C:\Users\User\Desktop\ai\baseline\results\train\20221108_235819\
+    
       tb_dir: C:\Users\User\Desktop\ai\baseline\results\train\20221108_235819\train.log  
 
   - 학습 스크립트 실행
